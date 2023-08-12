@@ -1,0 +1,126 @@
+:root {
+  --background-color: #070606;
+  --text-color: #fffdfa;
+  --yes-color: #16bb3f;
+  --no-color: #e31837;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  background-image: url(background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+.header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+*/
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  border-radius: 16px;
+  padding: 50px;
+  line-height: 30px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 64px 0 rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.text h1 {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.buttons button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: var(--text-color);
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 40px;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.2s;
+  width: auto;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 64px 0 rgba(255, 255, 255, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+}
+
+.buttons button:active {
+  transform: scale(0.96);
+}
+
+#yes:hover {
+  background-color: var(--yes-color);
+}
+
+#no:hover {
+  background-color: var(--no-color);
+}
+
+i {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  transition: ease-in-out 100ms;
+}
+
+a {
+  color: var(--text-color);
+}
+
+i:hover {
+  transform: scale(1.1);
+}
